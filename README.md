@@ -1,10 +1,10 @@
 ## General Assembly Capstone Project
 
-Ever since moving to Melbourne from New York, I have been keenly aware of the lack of good Mexican food in Melbourne. Overtime, this sentiment encouraged me to try and find the best Mexican food by webscraping Zomato.com for every review of Mexican restaurants I could find.
+Ever since moving to Melbourne from New York, I have been keenly aware of the lack of good Mexican food in Melbourne. Overtime, this encouraged me to try and find the best Mexican food by webscraping Zomato.com for every review of Mexican restaurants I could find.
 
-I was able to scrape about 6,700 reviews. Unfortunately, I found that almost 3,500 reviews did not have numerical review scores. Instead, as a result of Zomato purchasing Urbanspoon.com in 2015, these review ratings consisted of a sentiment, positive or negative. Zomato encourages former Urbanspoon users to update their reviews to reflect a numerical score, but this doesn't appear to be happening. 
+In the end, I was able to scrape about 6,700 reviews. Unfortunately, I found that almost 3,500 reviews did not have numerical review scores. Instead, as a result of Zomato purchasing Urbanspoon.com in 2015, these review ratings consisted of a sentiment, positive or negative. Zomato encourages former Urbanspoon users to update their sentiment reviews to reflect a numerical score, but this doesn't appear to be happening. 
 
-I think this is a big deal for Zomato. While they almost certainly utilise the data from the sentiment reviews already, the sentiment isn't factored into a restaurant's rating. That said, I found that there was a substantial difference in a restaurant's score on Zomato, and the score derived by the average of all review scores. 
+While Zomato certainly utilises the data from the sentiment reviews already, the sentiment is not factored into a restaurant's rating. Additionally, there is a difference between a restaurant's score on Zomato, and the average of all review scores for a given restaurant. 
 
 The below plots conveys a lot of information to this point. 
 - Each 'bubble' is a restaurant, and the size of the bubbles is determined by how many reviews there are. 
