@@ -4,12 +4,12 @@ Ever since moving to Melbourne from New York, I have been keenly aware of the la
 
 In the end, I was able to scrape about 6,700 reviews. Unfortunately, I found that almost 3,500 reviews did not have numerical review scores. Instead, as a result of Zomato purchasing Urbanspoon.com in 2015, these review ratings consisted of a sentiment, positive or negative. Zomato encourages former Urbanspoon users to update their sentiment reviews to reflect a numerical score, but this doesn't appear to be happening. 
 
-While Zomato certainly utilises the data from the sentiment reviews already, the sentiment is not factored into a restaurant's rating. Given that over half of the reviews didn't have scores, this is substantial. Fortuneately, there is an alternative: use machine learning techniques and existing data to predict the review scores for the sentiment reviews.
+While Zomato certainly utilises the data from the sentiment reviews already, the sentiment is not factored into a restaurant's rating. Given that over half of the reviews didn't have scores, this is substantial. Fortunately, there is an alternative: use machine learning techniques and existing data to predict the review scores for the sentiment reviews.
 
-I began using a bubble plot to examine the difference between a restaurant's score on Zomato, and the average of all review scores for a given restaurant. 
+I began by using a bubble plot to examine the difference between a restaurant's score on Zomato, and the average of all review scores for a given restaurant. 
 - Each 'bubble' is a restaurant, and the size of the bubbles is determined by how many reviews each restaurant has. 
-- The first plot score corresponds to Zomato's score for the restaurant, and determines bubble size by counting all reviews  (numerical and sentimental). 
-- The second plot score corresponds to the average of review scores for each restaurant, and determines bubble size by only counting the numerical reviews each restaurant had.
+- The scores on the first plot corresponds to Zomato's score for the restaurant, and determines bubble size by counting all reviews (numerical and sentimental) for each restaurant. 
+- The scores on the second plot corresponds to the average of review scores for each restaurant, and determines bubble size by **only** counting the numerical reviews each restaurant had.
 - The color of each bubble is consistent across plots and restaurants, and shows shifts in bubbles.
 
 ![Image](https://raw.githubusercontent.com/SeanTurner026/Zomato-and-Melbourne-Mexican-Restaurants/master/Images/subplots1.png)
