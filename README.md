@@ -4,7 +4,7 @@ Ever since moving to Melbourne from America, I have been keenly aware of the lac
 
 Upon scraping the reviews, I found that 3,500 of the reviews did not actually have numerical reviews scores. Instead, as a result of Zomato purchasing Urbanspoon.com in 2015, these reviews rated a restaurant as positive or negative. Zomato was encouraging former Urbanspoon users to update their reviews to reflect a numerical score. Unfortunately, this doesn't appear to be happening.
 
-While I still had 2,500 reviews which had text, I decided to try and make use of the Urbanspoon reviews since there are thousands of these sentiment reviews which don't contribute.
+While I still had 2,500 reviews which had text, I decided to try and make use of the Urbanspoon reviews since there are thousands of these sentiment reviews which do not contribute.
 
 ![Image](https://raw.githubusercontent.com/SeanTurner026/Zomato-and-Melbourne-Mexican-Restaurants/master/Images/subplot1.png)
 
