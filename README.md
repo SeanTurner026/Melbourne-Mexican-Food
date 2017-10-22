@@ -6,7 +6,10 @@ I was able to scrape about 6,700 reviews. However, I found that 3,500 of the rev
 
 I think this is a big deal for Zomato. While they almost certainly utilise the data from the sentiment reviews already, I found that there was a substantial difference in a restaurant's score on Zomato, and the score derived by the average of all review scores. 
 
-The below plots conveys a lot of information to this point. Each 'bubble' is a restaurant, and the size of the bubbles is determined by how many reviews there are. The first plot score corresponds to Zomato's score for the restaurant, and generates size utilising all reviews (regardless of if the review score is numerical or sentimental). The second plot uses the average review score for each restaurant, and determines size based on how many numerical review scores each restaurant had.
+The below plots conveys a lot of information to this point. 
+- Each 'bubble' is a restaurant, and the size of the bubbles is determined by how many reviews there are. 
+- The first plot score corresponds to Zomato's score for the restaurant, and generates size utilising all reviews (regardless of if the review score is numerical or sentimental). 
+- The second plot uses the average review score for each restaurant, and determines size based on how many numerical review scores each restaurant had.
 
 Regardless, I still had 2,500 reviews which had numerical scores.  
 
