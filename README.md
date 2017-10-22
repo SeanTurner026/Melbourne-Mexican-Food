@@ -1,12 +1,16 @@
 ## General Assembly Capstone Project
 
-Ever since moving to Melbourne from America, I have been keenly aware of the lack of good Mexican food in Melbourne. As a result, I decided to webscrape Zomato.com for every review of Melbourne Mexican restaurants I could find, and tried to find the best Mexican food.
+Ever since moving to Melbourne from New York, I have been keenly aware of the lack of good Mexican food in Melbourne. Overtime, this sentiment encouraged me to try and find the best Mexican food by webscraping Zomato.com for every review of Mexican restaurants I could find.
 
-Upon scraping the reviews, I found that 3,500 of the reviews did not actually have numerical reviews scores. Instead, as a result of Zomato purchasing Urbanspoon.com in 2015, these reviews rated a restaurant as positive or negative. Zomato was encouraging former Urbanspoon users to update their reviews to reflect a numerical score. Unfortunately, this doesn't appear to be happening.
+I was able to scrape about 6,700 reviews. However, I found that 3,500 of the reviews did not actually have numerical reviews scores. Instead, as a result of Zomato purchasing Urbanspoon.com in 2015, these review ratings consisted of a sentiment, positive or negative. Zomato encourages former Urbanspoon users to update their reviews to reflect a numerical score, but this doesn't appear to be happening.
 
-While I still had 2,500 reviews which had text, I decided to try and make use of the Urbanspoon reviews since there are thousands of these sentiment reviews which do not contribute.
+Regardless, I still had 2,500 reviews which had numerical scores. 
 
 ![Image](https://github.com/SeanTurner026/Zomato-and-Melbourne-Mexican-Restaurants/blob/master/Images/subplots1.png)
+
+Given that I still had 2,500 reviews which had text, I decided to try and make use of the Urbanspoon reviews, of which there are thousands do not contribute.
+
+
 
 You can use the [editor on GitHub](https://github.com/SeanTurner026/Zomato-and-Melbourne-Mexican-Restaurants/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
