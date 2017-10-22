@@ -6,7 +6,7 @@ I was able to scrape about 6,700 reviews. However, I found that 3,500 of the rev
 
 Regardless, I still had 2,500 reviews which had numerical scores. 
 
-![Image](https://github.com/SeanTurner026/Zomato-and-Melbourne-Mexican-Restaurants/blob/master/Images/subplots1.png)
+![Image](https://raw.githubusercontent.com/SeanTurner026/Zomato-and-Melbourne-Mexican-Restaurants/master/Images/subplots1.png)
 
 Given that I still had 2,500 reviews which had text, I decided to try and make use of the Urbanspoon reviews, of which there are thousands do not contribute.
 
