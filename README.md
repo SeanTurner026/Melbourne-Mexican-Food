@@ -6,6 +6,8 @@ Upon scraping the reviews, I found that 3,500 of the reviews did not actually ha
 
 While I still had 2,500 reviews which had text, I decided to try and make use of the Urbanspoon reviews since there are thousands of these sentiment reviews which don't contribute.
 
+[Link](https://raw.githubusercontent.com/SeanTurner026/Zomato-and-Melbourne-Mexican-Restaurants/master/Images/subplot1.png)
+
 You can use the [editor on GitHub](https://github.com/SeanTurner026/Zomato-and-Melbourne-Mexican-Restaurants/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
