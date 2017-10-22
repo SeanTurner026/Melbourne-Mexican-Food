@@ -20,8 +20,16 @@ Interestingly, the first plot (Zomato score) has a trend where higher ratings ar
 
 For this prediction of review score on the sentiment reviews to be reliable, I needed to build a good model using the 2,500 reviews that had numerical scores. The first thing I did was use spacey to analyze the review text I had. This created word type features, which kept track of proportions of each word type (noun, verb, adverb) for each review. I then used vader to analyze the sentiment of each review, which created positive, neutral, objective and compound features. 
 
-I took things a step further by using the sentiment reviews to train a model that classifies if a review is positive or negative. This turned out to be very successful, misclassifying only 35 of 696 reviews (5.0%).  
+I took things a step further by using the sentiment reviews to train a model that classifies if a review is positive or negative. This turned out to be very successful, misclassifying only 35 of 696 reviews (5.0%). Given the high accuracy I decided to use the model to impute sentiment on the 2,500 numerical score reviews as a feature.
 
+## Results
+
+![Image](https://raw.githubusercontent.com/SeanTurner026/Zomato-and-Melbourne-Mexican-Restaurants/master/Images/subplots2.png)
+
+
+
+
+-----
 
 You can use the [editor on GitHub](https://github.com/SeanTurner026/Zomato-and-Melbourne-Mexican-Restaurants/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
