@@ -2,18 +2,19 @@
 
 Ever since moving to Melbourne from New York, I have been keenly aware of the lack of good Mexican food in Melbourne. Overtime, this sentiment encouraged me to try and find the best Mexican food by webscraping Zomato.com for every review of Mexican restaurants I could find.
 
-I was able to scrape about 6,700 reviews. However, I found that 3,500 of the reviews did not actually have numerical reviews scores. Instead, as a result of Zomato purchasing Urbanspoon.com in 2015, these review ratings consisted of a sentiment, positive or negative. Zomato encourages former Urbanspoon users to update their reviews to reflect a numerical score, but this doesn't appear to be happening. 
+I was able to scrape about 6,700 reviews. Unfortunately, I found that almost 3,500 reviews did not have numerical review scores. Instead, as a result of Zomato purchasing Urbanspoon.com in 2015, these review ratings consisted of a sentiment, positive or negative. Zomato encourages former Urbanspoon users to update their reviews to reflect a numerical score, but this doesn't appear to be happening. 
 
-I think this is a big deal for Zomato. While they almost certainly utilise the data from the sentiment reviews already, I found that there was a substantial difference in a restaurant's score on Zomato, and the score derived by the average of all review scores. 
+I think this is a big deal for Zomato. While they almost certainly utilise the data from the sentiment reviews already, the sentiment isn't factored into a restaurant's rating. That said, I found that there was a substantial difference in a restaurant's score on Zomato, and the score derived by the average of all review scores. 
 
 The below plots conveys a lot of information to this point. 
 - Each 'bubble' is a restaurant, and the size of the bubbles is determined by how many reviews there are. 
 - The first plot score corresponds to Zomato's score for the restaurant, and generates size utilising all reviews (regardless of if the review score is numerical or sentimental). 
-- The second plot uses the average review score for each restaurant, and determines size based on how many numerical review scores each restaurant had.
-
-Regardless, I still had 2,500 reviews which had numerical scores.  
+- The second plot score corresponds to the average of review scores for each restaurant, and determines size based on how many numerical review scores each restaurant had.
+- The color of each bubble is consistent across plots and restaurants, and bubble movement demonstrates changes in score.
 
 ![Image](https://raw.githubusercontent.com/SeanTurner026/Zomato-and-Melbourne-Mexican-Restaurants/master/Images/subplots1.png)
+
+Interestingly, the first plot (Zomato score) has a trend where higher ratings are generally associated with more expensive restaurants.  
 
 Given that I still had 2,500 reviews which had text, I decided to try and make use of the Urbanspoon reviews, of which there are thousands do not contribute.
 
