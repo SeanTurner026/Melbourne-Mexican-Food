@@ -4,7 +4,7 @@ Ever since moving to Melbourne from New York, I have been keenly aware of the la
 
 In the end, I was able to scrape about 6,700 reviews. Unfortunately, I found that almost 3,500 reviews did not have numerical review scores. Instead, as a result of Zomato purchasing Urbanspoon.com in 2015, these review ratings consisted of a sentiment, positive or negative. Zomato encourages former Urbanspoon users to update their sentiment reviews to reflect a numerical score, but this doesn't appear to be happening. 
 
-While Zomato certainly utilises the data from the sentiment reviews already, the sentiment is not factored into a restaurant's rating. Given that over half of the reviews didn't have scores, this is substantial. Fortunately, there is an alternative: use machine learning techniques and existing data to predict the review scores for the sentiment reviews.
+While Zomato certainly utilises the data from the sentiment reviews already, the sentiment is not factored into a restaurant's rating. Given that over half of the reviews didn't have scores, this is substantial. Fortunately, there is an alternative: use machine learning techniques on the entries with numerical scores to predict review scores for the sentiment reviews.
 
 I began by using a bubble plot to examine the difference between a restaurant's score on Zomato, and the average of all review scores for a given restaurant. 
 - Each 'bubble' is a restaurant, and the size of the bubbles is determined by how many reviews each restaurant has. 
@@ -16,8 +16,11 @@ I began by using a bubble plot to examine the difference between a restaurant's 
 
 Interestingly, the first plot (Zomato score) has a trend where higher ratings are generally associated with more expensive restaurants. Additionally, the colors show that some restaurants have a dramatically different score.  
 
-Given that I still had 2,500 reviews which had text, I decided to try and make use of the Urbanspoon reviews, of which there are thousands do not contribute.
+## Feature Engineering and Sentiment Analysis
 
+For this prediction of review score on the sentiment reviews to be reliable, I needed to build a good model using the 2,500 reviews that had numerical scores. The first thing I did was use spacey to analyze the review text I had. This created word type features, which kept track of proportions of each word type (noun, verb, adverb) for each review. I then used vader to analyze the sentiment of each review, which created positive, neutral, objective and compound features. 
+
+I took things a step further by using the sentiment reviews to train a model that classifies if a review is positive or negative. This turned out to be very successful, misclassifying only 35 of 696 reviews (5.0%).  
 
 
 You can use the [editor on GitHub](https://github.com/SeanTurner026/Zomato-and-Melbourne-Mexican-Restaurants/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
