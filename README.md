@@ -10,7 +10,7 @@ I began by using a bubble plot to examine the difference between a restaurant's 
 - Each 'bubble' is a restaurant, and the size of the bubbles is determined by how many reviews each restaurant has. 
 - The scores on the first plot corresponds to Zomato's score for the restaurant, and determines bubble size by counting all reviews (numerical and sentimental) for each restaurant. 
 - The scores on the second plot corresponds to the average of review scores for each restaurant, and determines bubble size by **only** counting the numerical reviews each restaurant had.
-- The color of each bubble is consistent across plots and restaurants, and shows shifts in bubbles.
+- The color of each bubble is consistent across plots and restaurants, and shows shifts in bubbles between the two plots.
 
 ![Image](https://raw.githubusercontent.com/SeanTurner026/Zomato-and-Melbourne-Mexican-Restaurants/master/Images/subplots1.png)
 
@@ -20,7 +20,7 @@ Interestingly, the first plot (Zomato score) has a trend where higher ratings ar
 
 For this prediction of review score on the sentiment reviews to be reliable, I needed to build a good model using the 2,500 reviews that had numerical scores. The first thing I did was use spacey to analyze the review text I had. This created word type features, which kept track of proportions of each word type (noun, verb, adverb) for each review. I also used vader to analyze the sentiment of each review, which created positive, neutral, objective and compound features, and I used Scikit-Learn's Term-Frequency-Inverse-Document-Frequency (TFIDF) to create a sparse matrix of the top 2000 words from the review text. 
 
-Lastly, I trained a Logistic Regression model on the sentiment reviews and classified if a review is positive or negative. This model was highly accurate. The model had an r<sup>2</sup> score of ____________ (baseline 0.68), and misclassifyied sentiment on only 35 of 696 reviews (5.0%). Given the high accuracy I decided to use the model to impute sentiment on the 2,500 numerical score reviews as a feature.
+Lastly, I trained a Logistic Regression model on the sentiment reviews and classified if a review is positive or negative. This model was highly accurate. The model had an r<sup>2</sup> score of 0.95 (baseline 0.68), and misclassifyied sentiment on only 35 of 696 reviews (5.0%). Given the high accuracy I decided to use the model to impute sentiment on the 2,500 numerical score reviews as a feature.
 
 ## Results
 
