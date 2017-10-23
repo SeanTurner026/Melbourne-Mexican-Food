@@ -24,9 +24,7 @@ Lastly, I trained a Logistic Regression model on the sentiment reviews and class
 
 ## Results
 
-With the features that the first model utilised (with the top 500 TFIDF features, instead of 2000), I trained a Random Forest Regression model that had an r<sup>2</sup> score of 0.69. Using this model to impute numerical ratings on the sentiment reviews, I was able to generate the second plot in the below, which utilises the imputed review scores when calculating the new average review scores for each restaurant
-
-### USE CASE: WORK THIS IN WITH THE non-review scores
+With the features that the first model utilised (with the top 500 TFIDF features, instead of 2000), I trained a Random Forest Regression model that had an r<sup>2</sup> score of 0.69. Using this model to impute numerical ratings on the sentiment reviews, I was able to generate the new second plot in the below, which utilises the imputed review scores when calculating the new average review scores for each restaurant.
 
 ![Image](https://raw.githubusercontent.com/SeanTurner026/Zomato-and-Melbourne-Mexican-Restaurants/master/Images/subplots2.png)
 
